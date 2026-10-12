@@ -1,0 +1,23 @@
+_target_: src.data.SolverDataModule
+h5_file_path: ${paths.data_dir}/train.h5
+paras_cfg_path: ${paths.data_dir}/para_info.yaml
+var_dims:
+  total_time: 360
+  n_time: 360
+  n_z: 101
+  n_r: 6
+  n_para: 11
+  n_exp_para: 6
+  n_oper_para: 2
+time_downsample: 1
+shuffle_seed: 42
+bul_only: ${model.bul_only}
+apply_abs: true
+debug: false
+sample_filter: null
+dataset_name: grm
+loader_cfg:
+  batch_size: 64
+  num_workers: 0
+  shuffle: true
+  pin_memory: false

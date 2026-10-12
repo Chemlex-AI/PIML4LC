@@ -1,0 +1,6 @@
+defaults:
+  - train
+  - _self_
+train: false
+ckpt_path: ???
+task_name: fno_eval

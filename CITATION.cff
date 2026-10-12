@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the associated manuscript when using this software."
+title: "PIML4LC: differentiable liquid chromatography modeling"
+type: software
+authors:
+  - name: Chemlex-AI
+repository-code: "https://github.com/Chemlex-AI/PIML4LC"
+url: "https://github.com/Chemlex-AI/PIML4LC"
+license: BSD-3-Clause

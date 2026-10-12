@@ -1,0 +1,28 @@
+# @package _global_
+# Small artificial example: checks software operation, not scientific accuracy.
+task_name: smoke
+data:
+  h5_file_path: ${paths.data_dir}/example.h5
+  var_dims:
+    total_time: 12
+    n_time: 12
+    n_z: 17
+    n_r: 2
+  loader_cfg:
+    batch_size: 2
+model:
+  net:
+    n_modes_height: 8
+    hidden_channels: 8
+  rollout_net:
+    cond_embed_size: 8
+trainer:
+  accelerator: cpu
+  min_epochs: 1
+  max_epochs: 1
+  limit_train_batches: 2
+  limit_val_batches: 1
+  limit_test_batches: 1
+  enable_progress_bar: false
+extras:
+  print_config: false

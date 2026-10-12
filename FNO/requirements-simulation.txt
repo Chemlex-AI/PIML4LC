@@ -1,0 +1,3 @@
+# Optional COMSOL adapter; COMSOL itself must be installed and licensed.
+mph>=1.2,<2
+pandas>=2.2,<3

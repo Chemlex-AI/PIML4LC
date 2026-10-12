@@ -1,0 +1,11 @@
+_target_: src.models.net.FNO
+
+_partial_: true
+# n_modes_height: 64
+# hidden_channels: 64
+
+n_modes_height: 64
+hidden_channels: 128
+
+model_desc: FNO
+

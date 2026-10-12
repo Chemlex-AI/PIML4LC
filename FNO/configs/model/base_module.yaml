@@ -1,0 +1,28 @@
+_target_: ???
+
+compile: False
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 5e-4
+  betas: 
+    - 0.9
+    - 0.95
+  weight_decay: 0.0
+
+# scheduler:
+#   _target_: src.models.lr_scheduler.PolyNomialLRScheduler
+#   _partial_: true
+#   warmup_steps: 256
+#   total_steps: ${trainer.max_steps}
+#   lr: ${..optimizer.lr}
+#   lr_end: 4e-5
+#   warmup_init_lr: 1e-07
+#   power: 1
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  factor: 0.6
+  patience: 5

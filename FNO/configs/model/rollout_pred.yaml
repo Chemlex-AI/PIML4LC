@@ -1,0 +1,24 @@
+defaults:
+  - base_module
+
+_target_: src.models.module.RolloutPredModule
+
+bul_only: false
+pred_residual: false
+paras_cfg_path: ${data.paras_cfg_path}
+
+net: ???
+
+rollout_net:
+  _target_: src.models.net.RolloutNet
+  net: ${..net}
+  bul_only: ${..bul_only}
+  pred_residual: ${..pred_residual}
+  time_emb: false
+  var_dims: ${data.var_dims}
+  time_downsample: ${data.time_downsample}
+  cond_embed_size: 128
+  cond_n_layers: 3
+  relu: true
+
+load_pretrained_ckpt: null

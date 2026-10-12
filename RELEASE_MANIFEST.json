@@ -1,0 +1,478 @@
+{
+  "date": "2026-10-12",
+  "scope": "Code-only overlay; merge into the existing PIML4LC repository root.",
+  "preserved_baseline_files": [
+    "COMSOL_models/ED_model.mph",
+    "COMSOL_models/GRM.mph",
+    "COMSOL_models/transport_model_chromatography.mph",
+    "LICENSE",
+    "wetlab_params/params.xlsx"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/fno.yml",
+      "sha256": "3eb2e134b9ceb917833a27e686a4c19202eba2527eb2433e34057e653733914c",
+      "bytes": 808
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f7fbf24a0e0030949d2b2b0532bc2466084de13317da1e3028349135c05bc63c",
+      "bytes": 196
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "ad4a57c9c7bd5d70b52a8b1afe13ae5703415224a2da575d0d81005e83f34183",
+      "bytes": 347
+    },
+    {
+      "path": "FNO/configs/__init__.py",
+      "sha256": "c4e0946eeddfa779ed7dc9e5cdf7b2da7ce5e5d6eb50ea270c7920ac78ed9d5a",
+      "bytes": 36
+    },
+    {
+      "path": "FNO/configs/callbacks/default.yaml",
+      "sha256": "697a807052477d5b8d245d9aa61ebb7bb068c73b13594c77e9b4a50ce3b31378",
+      "bytes": 467
+    },
+    {
+      "path": "FNO/configs/data/solver.yaml",
+      "sha256": "c9160cfce1c37ec12a554372fef6f683a68306c12eb08c8b8c61155f25ad73d2",
+      "bytes": 470
+    },
+    {
+      "path": "FNO/configs/eval.yaml",
+      "sha256": "ff25e790a1482eb73d88ead8aa621d3a92a14f902b773d7667bfea26d92b2166",
+      "bytes": 85
+    },
+    {
+      "path": "FNO/configs/experiment/smoke.yaml",
+      "sha256": "227e8fb31ac2f2104749a2439ee3fdb7f6b86610976b7fd89936ed4eb52f6e3f",
+      "bytes": 585
+    },
+    {
+      "path": "FNO/configs/extras/default.yaml",
+      "sha256": "be840dca331ca9e738ddf6cf83019582907cd211f31216665c237206a82c798d",
+      "bytes": 233
+    },
+    {
+      "path": "FNO/configs/hydra/default.yaml",
+      "sha256": "ea980c229ae80d122600f923d7f948da431b30b1f4595b64f94e2fa42dae3063",
+      "bytes": 577
+    },
+    {
+      "path": "FNO/configs/logger/csv.yaml",
+      "sha256": "56b74f74c995733fa336e610771873d0db6cd65cec188fb28204846cab1533ce",
+      "bytes": 171
+    },
+    {
+      "path": "FNO/configs/model/base_module.yaml",
+      "sha256": "6e41e3016d7f4028490fc71364deba5e560f2c012811ca4a3b3e3eb8c4fa2d4c",
+      "bytes": 500
+    },
+    {
+      "path": "FNO/configs/model/net/fno.yaml",
+      "sha256": "cd63c4ce6c845fd9d46e4360008c3f412ddd58be2b4ee25237311660027fc46d",
+      "bytes": 148
+    },
+    {
+      "path": "FNO/configs/model/rollout_pred.yaml",
+      "sha256": "df9ec79e39d12779838ff2f50d03773701c7cc41ea3e84a9d7a84a4ce0c879c8",
+      "bytes": 487
+    },
+    {
+      "path": "FNO/configs/paths/default.yaml",
+      "sha256": "180f09af6bafa145b686f0074e4ff9227bddac52be518dd54d2bddcd24ea5f7c",
+      "bytes": 174
+    },
+    {
+      "path": "FNO/configs/train.yaml",
+      "sha256": "8a918ebfadabbf2de5c3e39e3d1ce098f5ea2c9097e1ef2b4051d97395c34a25",
+      "bytes": 326
+    },
+    {
+      "path": "FNO/configs/trainer/default.yaml",
+      "sha256": "bb819e0dee45065644c81ce9543f848d008a5d029f88d6c2cc55356b5db59cc3",
+      "bytes": 325
+    },
+    {
+      "path": "FNO/constraints-tested.txt",
+      "sha256": "9b090bb6c8bcfba1a11efb910ef3ee4d5cd4867fd80f01cabbbdecf3e7759f81",
+      "bytes": 983
+    },
+    {
+      "path": "FNO/data/para_info.yaml",
+      "sha256": "852c1f9fff4a65a627ea5f7c76fbb64e9b35f2d61d9e8392bdd22757cd8e111a",
+      "bytes": 1014
+    },
+    {
+      "path": "FNO/docs/data_format.md",
+      "sha256": "9d3baf6714ac1c5ce394ae4c694a1eb709a4eebb1df454acb15deb0b38fcac77",
+      "bytes": 4837
+    },
+    {
+      "path": "FNO/docs/method.md",
+      "sha256": "733a9f998ba6d7597c2ee3e76fb671f19946294ce06f5ba340d5e2bde0b99206",
+      "bytes": 4391
+    },
+    {
+      "path": "FNO/docs/README.zh-CN.md",
+      "sha256": "5dbc6c037796dd1e6fe12faca7a9afd806e786461f8887cda7441cbf2476f2b8",
+      "bytes": 2303
+    },
+    {
+      "path": "FNO/docs/source_mapping.md",
+      "sha256": "b9df4c503cacee3f8d4b16c834842a3401b9198d8fd40ce458a90805b5f3f5b8",
+      "bytes": 3544
+    },
+    {
+      "path": "FNO/docs/validation.md",
+      "sha256": "4874f940c731181dcfc7c48d15e24ab70b78a9e6b15b93ee9a705c2c62f94aac",
+      "bytes": 1943
+    },
+    {
+      "path": "FNO/examples/make_example_data.py",
+      "sha256": "33a42d4d75cef4aab310256cfbcd4c2a0702c11acc581da374c78f8d427cb3e2",
+      "bytes": 3169
+    },
+    {
+      "path": "FNO/examples/run_smoke.py",
+      "sha256": "6514e0aecb7a7728e8c0dd40263ca55c67cba88dee885023e91b1ba13c16defa",
+      "bytes": 1236
+    },
+    {
+      "path": "FNO/licenses/lightning-hydra-template-MIT.txt",
+      "sha256": "c5e0ba731b2f455e400a363f7bb8843663df24dc22d612a3baf3ec36bdf581bd",
+      "bytes": 1085
+    },
+    {
+      "path": "FNO/licenses/NeuralOperator-MIT.txt",
+      "sha256": "a22e99c003ce51c66c3e2084831120e5c1ade8659cbf16c0ee7a7db7b11af195",
+      "bytes": 1103
+    },
+    {
+      "path": "FNO/pyproject.toml",
+      "sha256": "bdc1ac05fa94ab29127134d16baf05c351a89c3be80251b1e671a2d531237bcb",
+      "bytes": 639
+    },
+    {
+      "path": "FNO/README.md",
+      "sha256": "f3b2d84fab0824a3410d0bf0ad766705e95ad1ef175eb3f9f35ba6f3edc63b0a",
+      "bytes": 9944
+    },
+    {
+      "path": "FNO/requirements-dev.txt",
+      "sha256": "f5a4ac2a8570693310bad54af31ca0b80113477c2de6e56229ad9dd8ae4189ad",
+      "bytes": 35
+    },
+    {
+      "path": "FNO/requirements-simulation.txt",
+      "sha256": "6cfb918e73128363ad8ff6ce69fbedfd22ce6af548fad830f846b8c81545f87f",
+      "bytes": 103
+    },
+    {
+      "path": "FNO/requirements.txt",
+      "sha256": "b2ccbdcc05de36ad4786e85a634d3d92dcb0bb169687133f63dd822497e45a5c",
+      "bytes": 416
+    },
+    {
+      "path": "FNO/src/__init__.py",
+      "sha256": "6acbba1a27817c9c664220cd140e2e6054fdd802b24805d2d79686bb32a58707",
+      "bytes": 38
+    },
+    {
+      "path": "FNO/src/data/__init__.py",
+      "sha256": "2d3f34fdaba16ca01ecc73a0a1590e2af569c5e3c9ccdd921e55e4300e540e70",
+      "bytes": 49
+    },
+    {
+      "path": "FNO/src/data/batch.py",
+      "sha256": "94eb9aaad4dd88514cccd0e5e5d8fce00b52ff27159901acb4e3ba603d30569a",
+      "bytes": 10120
+    },
+    {
+      "path": "FNO/src/data/datamodule.py",
+      "sha256": "95d517ca17f32bbe919c19a54f430a94d5b2371b2c8600cccccd537180e7c87e",
+      "bytes": 1280
+    },
+    {
+      "path": "FNO/src/data/solver_datamodule.py",
+      "sha256": "e2715d75117b530b7088d363b1927ebe0da028e7c543e60cb4e69134922ddbfe",
+      "bytes": 10957
+    },
+    {
+      "path": "FNO/src/eval.py",
+      "sha256": "a7a5a54a3aaf56394dfe9b3c189f22b056ec3e262c67f68cd14d02ef3002046c",
+      "bytes": 2622
+    },
+    {
+      "path": "FNO/src/inverse.py",
+      "sha256": "c8cb685d755f09c7708f8e48f182caccd83923e843f4e5b4f8c57de3c9adf73a",
+      "bytes": 5571
+    },
+    {
+      "path": "FNO/src/io_utils.py",
+      "sha256": "5d487139ce638cae24a50dab95ea6a094d14bbd3fe3fcfc1d4e46c2ad92e5800",
+      "bytes": 2634
+    },
+    {
+      "path": "FNO/src/load_model.py",
+      "sha256": "bcf7800a600fd83b44137bfffc7a699526d799511c83e10fbb3741a7102bdd17",
+      "bytes": 1589
+    },
+    {
+      "path": "FNO/src/models/__init__.py",
+      "sha256": "eb788d09f8e4b8a73261c1faf36fd1895cc8debdfe9ea005a1be14af2f1fec3d",
+      "bytes": 39
+    },
+    {
+      "path": "FNO/src/models/inverse/__init__.py",
+      "sha256": "b00f491e12cc3a528ab20c19cb41ec555839a685940753228051f192e95a5bee",
+      "bytes": 72
+    },
+    {
+      "path": "FNO/src/models/inverse/ga.py",
+      "sha256": "1904ee9b8ae7b98943d839f9291d7def094f3877ef2ae10532dbcdceb16ea58f",
+      "bytes": 17055
+    },
+    {
+      "path": "FNO/src/models/inverse/gd.py",
+      "sha256": "f4c43c1de3b13f73dac938c0be31817b6ce78958c6b692513b14d58c6b687800",
+      "bytes": 19902
+    },
+    {
+      "path": "FNO/src/models/inverse/inverse_alg.py",
+      "sha256": "1e65ca927212864fbe1a3086b3df1b75b459f81befd031a267a2c1c1dfc56cfd",
+      "bytes": 5837
+    },
+    {
+      "path": "FNO/src/models/module/__init__.py",
+      "sha256": "c8ec3a7a8996dfae430e19e30d8355d1cef6bfa73888ee8628cb25703aa6aa50",
+      "bytes": 52
+    },
+    {
+      "path": "FNO/src/models/module/base_module.py",
+      "sha256": "040d1b8a317c56f59f7aa0c1dc025ca5193dc4f9bd4b9fa15c2bfe8b3fab922e",
+      "bytes": 6801
+    },
+    {
+      "path": "FNO/src/models/module/rollout_pred_module.py",
+      "sha256": "3d8eeab54cb3707bfd7724507352a2528db70c1117ade4810746c41d96ac9665",
+      "bytes": 4838
+    },
+    {
+      "path": "FNO/src/models/net/__init__.py",
+      "sha256": "c2fdc54cfc3fe4cd38d8adbf133320bfaa72be6ae89f352f0c9abaa7b756ebd2",
+      "bytes": 59
+    },
+    {
+      "path": "FNO/src/models/net/base.py",
+      "sha256": "ebf460ac534f8c9872cb10d944632170e01ed4ef0fce5098035b19b0f9568019",
+      "bytes": 1016
+    },
+    {
+      "path": "FNO/src/models/net/FNO/__init__.py",
+      "sha256": "7b848f9c61b80f05b08e04b2a2f0650499f9eeddb1f6195e02847c9a54be79f4",
+      "bytes": 58
+    },
+    {
+      "path": "FNO/src/models/net/FNO/base_model.py",
+      "sha256": "91fac46b908735b800096597c97c648ca6767335013bb1132224393c885a2cbf",
+      "bytes": 6696
+    },
+    {
+      "path": "FNO/src/models/net/FNO/fno.py",
+      "sha256": "d70bd331b13c6a3f7ab336ff1611b08dfd6eecdc994496efe4bcfd319d4efdde",
+      "bytes": 16984
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/__init__.py",
+      "sha256": "7e368a6b6af9c973a50f8b5055fe83123054736da01ef7df63ecca1ba9de74f7",
+      "bytes": 81
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/base_spectral_conv.py",
+      "sha256": "7924cbc8ec8414898476b7c6625bc2fca4450606e0a17aa6c1a20db628089312",
+      "bytes": 1048
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/channel_mlp.py",
+      "sha256": "7b09c9fbea24b13745241f1f00a753a21780b5a30e05fd530be592aea0f3d4df",
+      "bytes": 3891
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/einsum_utils.py",
+      "sha256": "393d2d3ffe8ad5ac7ca453e330fe663cbe7afadedd6a9ce1ebe462ea560a249c",
+      "bytes": 3202
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/embeddings.py",
+      "sha256": "494f0b6874f0d3121bb781f9bf1db09c1fa75ed7b43a332273b15a7cc94aff11",
+      "bytes": 14074
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/fno_block.py",
+      "sha256": "8af68a49faa68c7e5dbb4dba4c256fe9ec90bd878c24e8b18d75c68dccd1e99a",
+      "bytes": 13547
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/normalization_layers.py",
+      "sha256": "860b289e6a22f2eb0a8d07617e16554c0bb4dea593e0ffc7faab686b42930665",
+      "bytes": 1477
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/resample.py",
+      "sha256": "d9429fadf9f448746dea5e65430f9d1eb6d2f684589c00f287c75fe6e210b123",
+      "bytes": 3471
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/skip_connections.py",
+      "sha256": "5d2a16c9adc26b9dec85c9ae3651d036a9d23c0ecbd922ce1094e12b0d6dee11",
+      "bytes": 4459
+    },
+    {
+      "path": "FNO/src/models/net/FNO/layers/spectral_convolution.py",
+      "sha256": "cc5f05145472c6b00a8b14646c7a0861a3882ce280bc39376b32e48f0819e90f",
+      "bytes": 24541
+    },
+    {
+      "path": "FNO/src/models/net/FNO/utils.py",
+      "sha256": "49452478fd2dd96e8fde64ed16eea5ea0c17300c09ebf29e9de51d7af775bc78",
+      "bytes": 1688
+    },
+    {
+      "path": "FNO/src/models/net/rollout_net.py",
+      "sha256": "1bfccc30e2367983795cb4c5e2cb6538fd93318555cdfa9d363845d7a2ef9a2a",
+      "bytes": 3372
+    },
+    {
+      "path": "FNO/src/models/net/utils.py",
+      "sha256": "f7bbda1914aeb4014c4732408b18fdabd70911a623072c02b16b16626c3c4c4d",
+      "bytes": 1597
+    },
+    {
+      "path": "FNO/src/models/pde_processor.py",
+      "sha256": "a85be898e2a04eb88c5750c6b6e6d993f11dd8bba1283d772b4d9b0a165693fd",
+      "bytes": 3583
+    },
+    {
+      "path": "FNO/src/models/simulator/cadet/__init__.py",
+      "sha256": "8d76714ff31861f4191b3d2039929b2549f893dda647f80fb8cc5be7f4c033f0",
+      "bytes": 124
+    },
+    {
+      "path": "FNO/src/models/simulator/cadet/cadet.py",
+      "sha256": "beccc8a73fcd316cd0ce4eefb33eb5e8b538bad0bf6d4ee096931caa8abe8eb2",
+      "bytes": 15981
+    },
+    {
+      "path": "FNO/src/models/simulator/cadet/solver.py",
+      "sha256": "e71232e7bed9ec64a3dc1bf64bf601408cba28713e859d8305df74c2697bc4d4",
+      "bytes": 2489
+    },
+    {
+      "path": "FNO/src/models/simulator/comsol/__init__.py",
+      "sha256": "e528463b9c68cd2826bf5eb1acca78a47e39aff468a0e2dc4a48ed61ad9a2390",
+      "bytes": 123
+    },
+    {
+      "path": "FNO/src/models/simulator/comsol/comsol.py",
+      "sha256": "811ded401669eba512cae62a8bda89ca30f5dddb98e1953c90a8935e15850f4a",
+      "bytes": 4323
+    },
+    {
+      "path": "FNO/src/models/simulator/comsol/solver.py",
+      "sha256": "bf563f8b8174231f99a5fa275e66e450260a8825fa935626db2f919c4924e104",
+      "bytes": 1651
+    },
+    {
+      "path": "FNO/src/predict.py",
+      "sha256": "9c1ee348bc6f83bd4f2d5fb4ec9e5d030ee78096c7400a36031c359f087740f1",
+      "bytes": 1759
+    },
+    {
+      "path": "FNO/src/simulate.py",
+      "sha256": "6d01253fb8fe459e819b921082f4ebc116e60ced47f2e8a8b30b7bfa0f7a5b32",
+      "bytes": 2609
+    },
+    {
+      "path": "FNO/src/train.py",
+      "sha256": "6103378911d929b850c6cffeda89dcac67f2474bb0c5aef7d923becd53150e26",
+      "bytes": 4156
+    },
+    {
+      "path": "FNO/src/utils/__init__.py",
+      "sha256": "c3ee15e13253538e03cb4b16cff6b70a152b432827ac9ab40ed1ea0413de1e07",
+      "bytes": 354
+    },
+    {
+      "path": "FNO/src/utils/draw.py",
+      "sha256": "f7e41a61a27db68eea12af276b7a102e720558bd038bc54bff60729bc14c893c",
+      "bytes": 740
+    },
+    {
+      "path": "FNO/src/utils/instantiators.py",
+      "sha256": "2ea04c8c2280c5d15041706c86ae82c1a3a3c3c1781e7865174765a9c313b9fa",
+      "bytes": 1868
+    },
+    {
+      "path": "FNO/src/utils/logging_utils.py",
+      "sha256": "a9d32b96f8476308ea9e0eb3dae4a11a10193f482fd6fcc17ac9f9a53ac76082",
+      "bytes": 1859
+    },
+    {
+      "path": "FNO/src/utils/metrics.py",
+      "sha256": "73ccaa8c8054b7e13844ffb493f74e50650f4fa8eb88568dff94e67f3a3a1ae4",
+      "bytes": 1444
+    },
+    {
+      "path": "FNO/src/utils/pylogger.py",
+      "sha256": "707e8ab387bc4da57a1e6d3c44ce362bc0f4f2bc7e28d91ad5f06ae79ab76bb2",
+      "bytes": 2505
+    },
+    {
+      "path": "FNO/src/utils/rich_utils.py",
+      "sha256": "637620b2f8228abf52eea1bf92481e7bf5ed603dd4cd3f95642d8a173293d711",
+      "bytes": 3411
+    },
+    {
+      "path": "FNO/src/utils/utils.py",
+      "sha256": "372fa52b29cde58ec3273a9a7dc38724efa72a32150bb22630041ef4e6b095de",
+      "bytes": 4420
+    },
+    {
+      "path": "FNO/src/verify.py",
+      "sha256": "50bd7ece4ebe0ee44d16114e5082499284ca5718109936a58ef6995cd1d9b083",
+      "bytes": 6171
+    },
+    {
+      "path": "FNO/tests/test_reference_metrics.py",
+      "sha256": "656b66b178ce99c069391a8cdc21cba8bb9c98b10bdd91a0ef326bf217c93945",
+      "bytes": 528
+    },
+    {
+      "path": "FNO/tests/test_release_pipeline.py",
+      "sha256": "5e8ac90e743bc0b1dcc28a495049bb2207daf1baf10bc103d892f7da75cdf53a",
+      "bytes": 2341
+    },
+    {
+      "path": "FNO/tests/test_scientific_contracts.py",
+      "sha256": "5ec737196cd4f28bd902a671e761a270eeeb6511f6136932cd9a197a457c4a2e",
+      "bytes": 3683
+    },
+    {
+      "path": "FNO/THIRD_PARTY_NOTICES.md",
+      "sha256": "3135d10c9a6b4163b5423d31f771f7f428ff219fc07ebeb26462e71fdbe5b53b",
+      "bytes": 1702
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "a89a86709e8905228f99aab8d882f4b4b4cc525f5b4ee58003d94a6975e2e2cd",
+      "bytes": 1497
+    },
+    {
+      "path": "README.md",
+      "sha256": "cf9c7f10eb0caa1f5d81ef2eb77257daeaab4f6febf259c93b423c2943a84015",
+      "bytes": 1683
+    }
+  ]
+}

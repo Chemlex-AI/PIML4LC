@@ -1,0 +1,78 @@
+paras:
+  end_con:
+    min: 0.5
+    max: 0.95
+    pde_para: false
+    log_scale: false
+    choices: [0.5, 0.95]
+
+  end_time:
+    min: 120.0
+    max: 300.0
+    pde_para: false
+    log_scale: false
+    choices: [120.0, 210.0, 270.0, 300.0]
+
+  sa:
+    min: 0.0
+    max: 10.0
+    pde_para: true
+    log_scale: false
+
+  sd:
+    min: 0.0
+    max: 10.0
+    pde_para: true
+    log_scale: false
+
+  sq:
+    min: 0.0
+    max: 10.0
+    pde_para: true
+    log_scale: false
+
+  ka:
+    min: 0.0
+    max: 3.0
+    pde_para: true
+    log_scale: true
+
+  kd:
+    min: 0.0
+    max: 3.0
+    pde_para: true
+    log_scale: true
+
+  qmax:
+    min: 1.0
+    max: 4.0
+    pde_para: true
+    log_scale: true
+
+  col_disp:
+    min: -9.0
+    max: -7.0
+    pde_para: true
+    log_scale: true
+
+  fil_diff:
+    min: -3.0
+    max: -1.0
+    pde_para: true
+    log_scale: true
+
+  par_diff:
+    min: -9.0
+    max: -7.0
+    pde_para: true
+    log_scale: true
+
+loss_weights:
+  bul: 1.0
+  par: 1.0
+  sol: 1.0
+
+field_norm:
+  bul: 1.0
+  par: 0.1
+  sol: 2.0e-5

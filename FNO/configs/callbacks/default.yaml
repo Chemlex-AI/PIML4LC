@@ -1,0 +1,17 @@
+model_checkpoint:
+  _target_: lightning.pytorch.callbacks.ModelCheckpoint
+  dirpath: ${paths.output_dir}/checkpoints
+  filename: best_epoch{epoch:03d}
+  monitor: val/loss
+  mode: min
+  save_last: true
+  save_top_k: 3
+  auto_insert_metric_name: false
+model_summary:
+  _target_: lightning.pytorch.callbacks.ModelSummary
+  max_depth: 1
+early_stopping:
+  _target_: lightning.pytorch.callbacks.EarlyStopping
+  monitor: val/loss
+  mode: min
+  patience: 20

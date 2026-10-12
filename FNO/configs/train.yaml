@@ -1,0 +1,18 @@
+defaults:
+  - _self_
+  - data: solver
+  - model: rollout_pred
+  - model/net: fno
+  - callbacks: default
+  - logger: csv
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+  - experiment: null
+task_name: fno_rollout
+tags: [fno, grm]
+seed: 42
+train: true
+test: true
+ckpt_path: null
