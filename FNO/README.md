@@ -25,7 +25,7 @@ python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/
 python -m pip install -r requirements.txt
 ```
 
-The [Chinese quick start](docs/README.zh-CN.md) covers the same basic workflow.
+The [quick start](docs/quick_start.md) summarizes the same basic workflow.
 `constraints-tested.txt` records exact versions from the validated Python 3.11 CPU
 environment; optionally add `-c constraints-tested.txt` when installing requirements.
 

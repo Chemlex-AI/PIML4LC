@@ -1,0 +1,10 @@
+name: piml4lc-comsol
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.18
+  - pip=25.1
+  - pip:
+      - mph==1.2.4
+      - JPype1==1.6.0
+      - numpy==2.0.2

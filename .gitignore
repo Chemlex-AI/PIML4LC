@@ -11,6 +11,7 @@ FNO/logs/
 FNO/results/
 FNO/data/*
 !FNO/data/para_info.yaml
+COMSOL_models/comsol_sim/
 *.ckpt
 *.pt
 *.pth
